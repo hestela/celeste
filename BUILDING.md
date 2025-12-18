@@ -11,6 +11,10 @@ Celeste needs some packages installed in order to build:
 - [just](https://github.com/casey/just)
 - Headers for GTK4 and Libadwaita (The best way I've found to find the needed packages is to try building as described below, and then looking at the output to see what the missing header files are. You can then install the needed packages via your package manager. This process is kind of tedious, but I don't know any other methods at the moment).
 
+### Apt Dependencies
+This list is tested just on Debian 13 but may be helpful for other dpkg based distros.
+`apt install golang-go just libpango1.0-dev libgraphene-1.0-dev librust-gtk4-dev libadwaita-1-dev libclang-17-dev`
+
 ## Building
 To build the project, run the following from the root of the repository:
 
